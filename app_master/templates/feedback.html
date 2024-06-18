@@ -1,0 +1,71 @@
+{% extends 'base2.html' %}
+{% block content %}
+
+<style>
+  /* Custom CSS styles */
+  .feedback-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+  /* Add red star styles */
+  .required-star {
+    color: red;
+    margin-left: 5px;
+  }
+
+  .small-text {
+    font-size: small;
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+
+</style>
+<h2 style="text-align: center;">Feedback</h2>
+<h6 style="text-align: center;">"Your feedback fuels our continuous improvement. We value your thoughts and feedback."</h6>
+
+<div class="feedback-form">
+  <p class="small-text">Fields marked with <span class="required-star">*</span> are mandatory.</p>
+  <form action="/feedback" method="POST" autocomplete="off">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="{{ form.name.id_for_label }}">Name<span class="required-star">*</span></label>
+      {{ form.name }}
+    </div>
+    <div class="form-group">
+      <label for="{{ form.email.id_for_label }}">Email</label>
+      {{ form.email }}
+    </div>
+    <div class="form-group">
+      <label for="{{ form.town.id_for_label }}">Town<span class="required-star">*</span></label>
+      {{ form.town }}
+    </div>
+   
+    <div class="form-group">
+      <label for="{{ form.details.id_for_label }}">Feedback Details<span class="required-star">*</span></label>
+      {{ form.details }}
+    </div>
+    <button type="submit" class="btn btn-success"><i class="fas fa-save fa-lg"></i> Submit</button>
+  </form>
+</div>
+
+<script>
+  // Custom JS to adjust the height of the 'details' textarea
+  // Adjust the number of rows as needed
+  document.getElementById("id_details").rows = 5; // Example: Set rows to 5
+</script>
+
+{% endblock content %}

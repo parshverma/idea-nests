@@ -1,0 +1,250 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>IdeaNests</title>
+  <link rel="stylesheet" href={%static "admin/css/nicepage.css" %} media="screen">
+  <link rel="stylesheet" href={%static "admin/css/about.css" %} media="screen">
+  <script class="u-script" type="text/javascript" src={%static "admin/js/jquery.js" %} "=" defer=""></script>
+  <script class="u-script" type="text/javascript" src={%static "admin/js/nicepage.js" %} "=" defer=""></script>
+  <meta name="generator" content="Nicepage 4.15.11, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "media/images/default-logo.png"
+}</script>
+
+  <meta name="theme-color" content="#222589">
+  <meta property="og:title" content="About">
+  <meta property="og:type" content="website">
+</head>
+
+<body class="u-body u-xl-mode" data-lang="en">
+  <header class="u-clearfix u-header u-header" id="sec-3385">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <a href="{%url 'home'%}" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
+        <img src="media/images/default-logo.png" class="u-logo-image u-logo-image-1"
+          style="width: 150px; max-width: 150px; margin-left: -20px;">
+      </a>
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                href={%url 'home' %} style="padding: 10px;">Home</a>
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                href={%url 'howto' %} style="padding: 10px;"><span class="animated-text">How to use?</span></a>
+            </li>
+
+            </li>
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                href={%url 'form' %} style="padding: 10px;">Input Ideas</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                href={% url 'list' %} style="padding: 10px;">Display Ideas</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                href={% url 'about' %} style="padding: 10px;">About</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                href={% url 'feedback' %} style="padding: 10px;">Feedback</a>
+            </li>
+          </ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{%url 'home'%}">Home</a>
+
+                <li class="u-nav-item"><a
+                    class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                    href={%url 'howto' %} style="padding: 10px;"><span class="animated-text">How to use?</span></a>
+                </li>
+
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href={%url 'form' %}>Input Ideas</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href={%url 'list' %}>Display Ideas</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href={% url 'about' %}>About</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href={% url 'feedback' %}>Feedback</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-grey-10 u-section-1"
+    id="carousel_8560">
+    <div class="u-shape u-shape-rectangle u-white u-shape-1"></div>
+    <div class="u-image u-image-circle u-image-1" data-image-width="1100" data-image-height="1050"
+      data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction=""></div>
+    <div
+      class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+      <div class="u-container-layout u-valign-middle-xl u-container-layout-1">
+        <h3 class="u-text u-text-1">About</h3>
+        <p class="u-text u-text-2">IdeaNests is a web application that empowers citizens to contribute ideas for
+          improving their towns in various areas. It utilizes clustering algorithms to showcase the top three ideas per
+          town and area combination, enabling effective communication with decision-makers and fostering positive change
+          in communities.</p>
+
+      </div>
+    </div>
+    <div class="u-list u-list-1">
+      <div class="u-repeater u-repeater-1">
+        <div
+          class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-container-style u-custom-item u-list-item u-palette-1-light-1 u-repeater-item u-shape-rectangle u-list-item-1"
+          data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">
+          <div
+            class="u-container-layout u-similar-container u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-valign-top-lg u-valign-top-xl u-container-layout-2">
+            <h3
+              class="u-custom-font u-custom-item u-font-montserrat u-text u-text-body-alt-color u-text-default u-text-4">
+              How it Works</h3>
+            <p class="u-custom-item u-text u-text-5">IdeaNests operates on a simple yet effective principle. As a user,
+              you can submit your ideas, each dedicated to improving a specific area in your town.
+              The application then employs advanced clustering and segregation techniques to group similar ideas and
+              extract the top three suggestions for each town and area combination.
+              These curated ideas are then made available, not only amplifying your voice but also aiding
+              decision-makers in the prioritization process. Together, we can shape the future of our towns for the
+              better.<br>
+            </p>
+          </div>
+        </div>
+        <div
+          class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-container-style u-custom-item u-list-item u-palette-1-light-3 u-repeater-item u-shape-rectangle u-list-item-2"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div
+            class="u-container-layout u-similar-container u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-valign-top-lg u-valign-top-xl u-container-layout-3">
+            <h3 class="u-custom-font u-custom-item u-font-montserrat u-text u-text-default u-text-6">Inspiration</h3>
+            <p class="u-custom-item u-text u-text-palette-1-base u-text-7">IdeaNests was born out of the vision to
+              bridge the gap between citizens and decision-makers. It was inspired by the need for a focused and
+              noise-free platform that allows communities to harness their collective wisdom and creativity. IdeaNests
+              firmly believes that every citizen's voice matters, providing the means to turn ideas into reality and
+              build stronger, more vibrant towns for generations to come.<br>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- <div
+          class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-container-style u-custom-item u-list-item u-palette-1-base u-repeater-item u-shape-rectangle u-list-item-3"
+          data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">
+          <div
+            class="u-container-layout u-similar-container u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-valign-top-lg u-valign-top-xl u-container-layout-4">
+            <h4
+              class="u-custom-font u-custom-item u-font-montserrat u-text u-text-body-alt-color u-text-default u-text-4">
+              Stories/Updates</h4>
+            <p class="u-custom-item u-text u-text-9">
+              <li>Launched in Southbury & Middlebury for public use</li></br><br>
+              <li class="animated-text">First Newsletter coming soon</li>
+            </p>
+          </div>
+        </div> -->
+  
+
+        {% comment %} <div class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-container-style u-custom-item u-list-item u-palette-1-base u-repeater-item u-shape-rectangle u-list-item-3 marquee-container">
+          <div class="u-container-layout u-similar-container u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-valign-top-lg u-valign-top-xl u-container-layout-4 marquee-content">
+              <h4 class="u-custom-font u-custom-item u-font-montserrat u-text u-text-body-alt-color u-text-default u-text-4">
+                  Stories/Updates
+              </h4>
+              <p class="u-custom-item u-text u-text-9">
+                  <li>>>>Launched in Southbury, Middlebury, & Woodbury for public use.</li></br>
+                  <li></li>
+                  <li></li>
+                  <li>>>>Newsletter inaugural edition - Coming Soon.</li>
+              </p>
+          </div>
+      </div> {% endcomment %}
+
+      <div
+          class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-container-style u-custom-item u-list-item u-palette-1-base u-repeater-item u-shape-rectangle u-list-item-3"
+          data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">
+          <div
+            class="u-container-layout u-similar-container u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-valign-top-lg u-valign-top-xl u-container-layout-4">
+            <h4
+              class="u-custom-font u-custom-item u-font-montserrat u-text u-text-body-alt-color u-text-default u-text-4">
+              Stories/Updates</h4>
+            <p class="u-custom-item u-text u-text-9">
+              <li> Launched in Southbury & Middlebury for public use</li></br>
+              <li> Newsletter inaugural edition - Coming Soon.</li>
+            </p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-d120">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Developed by Parsh Verma-Pomperaug High School</p>
+      </div>
+    </footer> -->
+
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #0a4275;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="d-flex justify-content-between align-items-center">
+        <span class="flex-grow-1">"Learn - We add, Share - We multiply"</span>
+
+      </section>
+
+      <section class="d-flex justify-content-between align-items-center">
+        <span class="flex-grow-1" style="font-size: small; color: white; font-style: italic;">Contact: Parsh Verma -
+          parshpune@gmail.com</span>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "tcm",
+            "database": "tcm",
+            "username": "parshverma",
+            "password": "ADMIN@w0nderfu1"
+        }
+    ],
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "tcmTesting"
+    ]
+}
