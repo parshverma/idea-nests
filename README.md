@@ -12,7 +12,7 @@ Welcome to **IdeaNests**, where your ideas take flight! We're a community-driven
 
 ## Key Features
 
-- **Personalized AI Model**: Our advanced AI algorithm analyzes and summarizes submitted ideas, highlighting the ideas that are most representative of the collective community input.
+- **Advanced AI Algorithm**: Our platform leverages a sophisticated AI model that processes submitted ideas using Natural Language Processing (NLP) techniques. By utilizing algorithms such as TF-IDF vectorization and K-Means clustering, we analyze the content of each idea. The AI then identifies and summarizes the ideas that are most representative of the collective community input, ensuring that the most relevant and impactful suggestions are highlighted.
 - **Idea Submission**: Easily submit your ideas for various community departments such as Parks & Recreation, Schools, Libraries, and more.
 - **Collaborative Platform**: Discuss and improve ideas with input from your fellow residents, fostering a collaborative community environment.
 - **Feedback System**: Provide feedback to continually refine ideas and improve the platform.
