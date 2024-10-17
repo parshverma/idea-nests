@@ -9,803 +9,6 @@
         content="​digital agency, ​Crafting Effective UI/UX Design, Prototype a digital product idea, Our Features &amp;amp; Services., ​We Create Websites, ​We Create Digital, Web Design Trends, We build usable&nbsp;products., About Us">
     <meta name="description" content="">
     <title>IdeaNests</title>
-    <link rel="stylesheet" href={%static "admin/css/nicepage.css" %} media="screen">
-    <link rel="stylesheet" href={%static "admin/css/displayideas.css" %} media="screen">
-    <script class="u-script" type="text/javascript" src={%static "admin/js/jquery.js" %} "=" defer=""></script>
-    <script class="u-script" type="text/javascript" src={%static "admin/js/nicepage.js" %} "=" defer=""></script>
-    <meta name="generator" content="Nicepage 4.15.11, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
-    <link id="u-page-google-font" rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous">
-
-    <script type="application/ld+json">{
-		"@sSections": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"logo": "media/images/default-logo.png"
-
-}</script>
-    <meta name="theme-color" content="#222589">
-    <meta property="og:title" content="Display Ideas">
-    <meta property="og:type" content="website">
-
-    <style>/* Add styles for the animated text */
-        .animated-text {
-          background: linear-gradient(45deg, #060b9c, #d490e8, #ec083d);
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
-          padding: 10px;
-          font-weight: 600; /* Increase font weight for extra boldness */
-          font-family: 'Helvetica', Arial, sans-serif; /* Use a highly legible font */
-          display: inline-block; /* Ensure inline-block for animation */
-          animation: jump 1s infinite alternate, swing 1s infinite alternate ease-in-out; /* Add both jump and swing animations */
-        }
-        
-        /* Define the jump animation */
-        @keyframes jump {
-          0%, 100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-10px); /* Adjust the jump height as needed */
-          }
-        }
-        
-        /* Define the swing animation */
-        @keyframes swing {
-          0% {
-            transform: rotate(0deg);
-          }
-          100% {
-            transform: rotate(10deg); /* Adjust the swing angle as needed */
-          }
-        }</style>
-</head>
-
-<body class="u-body u-xl-mode" data-lang="en">
-    <header class="u-clearfix u-header u-header" id="sec-3385">
-        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-            <a href="{%url 'home'%}" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
-                <img src="media/images/default-logo.png" class="u-logo-image u-logo-image-1" style="width: 150px; max-width: 150px; margin-left: -20px;">
-              </a>
-            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                        href="#">
-                        <svg class="u-svg-link" viewBox="0 0 24 24">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
-                        </svg>
-                        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <rect y="1" width="16" height="2"></rect>
-                                <rect y="7" width="16" height="2"></rect>
-                                <rect y="13" width="16" height="2"></rect>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-                <div class="u-custom-menu u-nav-container">
-                    <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href={%url 'home' %} style="padding: 10px;">Home</a>
-                        </li>
-
-                        <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                            href={%url 'howto' %} style="padding: 10px;"><span class="animated-text">How to use?</span></a>
-                        </li>
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href={%url 'form' %} style="padding: 10px;">Input Ideas</a>
-                        </li>
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href={%url 'list' %} style="padding: 10px;">Display Ideas</a>
-                        </li>
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href={%url 'about' %} style="padding: 10px;">About</a>
-                        </li>
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href={%url 'feedback' %} style="padding: 10px;">Feedback</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="u-custom-menu u-nav-container-collapse">
-                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-                        <div class="u-inner-container-layout u-sidenav-overflow">
-                            <div class="u-menu-close"></div>
-                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href={%url 'home' %}>Home</a>
-                                </li>
-                                <li class="u-nav-item"><a
-                                    class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                    href={%url 'howto' %} style="padding: 10px;"><span class="animated-text">How to use?</span></a>
-                                </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href={% url 'form' %}>Input
-                                        Ideas</a>
-                                </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href={% url 'list'
-                                        %}>Display Ideas</a>
-                                </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href={%url 'about'%}>About</a>
-                                </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href={%url 'feedback'
-                                        %}>Feedback</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <section class="u-align-center u-clearfix u-grey-10 u-section-1" id="sec-a494">
-        <div class="u-clearfix u-sheet u-sheet-1">
-            
-            <!-- <div class="u-clearfix u-custom-html u-custom-html-1">
-                <style></style>
-                <label for="towns">Select a Town to view the ideas:</label>
-                <select name="towns">
-                    <option selected="" value="selection">Select a town</option>
-                    <option value="Southbury">Southbury</option>
-                    <option value="Middlebury">Middlebury</option>
-                </select>
-            </div> -->
-
-            <div>
-            <h1 style="color: rgb(33,30,123)">
-                Select a town to view the ideas
-            </h1>
-            <select name ="towns" class="selectpicker"
-                data-style="btn-success">
-                <option selected="" value="selection">Select a town</option>
-                <option value="Southbury">Southbury</option>
-                <option value="Middlebury">Middlebury</option>
-                <option value="Woodbury">Woodbury</option>
-            </select>
-        </div>
-
-
-<div>
-
-            <div class="u-list u-list-1">
-                <div class="u-repeater u-repeater-1">
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-white u-list-item-1"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000"
-                        data-animation-direction="">
-                        <div class="u-container-layout u-similar-container u-container-layout-1">
-                            <h4 class="u-text u-text-default u-text-1">Parks &amp; Recreation</h4>
-                            <ol class="u-text u-text-default u-text-2">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Park & Recreation" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Park & Recreation" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000"
-                        data-animation-direction="">
-                        <div class="u-container-layout u-similar-container u-container-layout-2">
-                            <h4 class="u-text u-text-default u-text-3">School</h4>
-                            <ol class="u-text u-text-default u-text-4">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "School" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "School" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000"
-                        data-animation-direction="">
-                        <div class="u-container-layout u-similar-container u-container-layout-3">
-                            <h4 class="u-text u-text-default u-text-5">Library</h4>
-                            <ol class="u-text u-text-default u-text-6">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Library" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Library" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-4"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000"
-                        data-animation-direction="">
-                        <div class="u-container-layout u-similar-container u-container-layout-4">
-                            <h4 class="u-text u-text-default u-text-7">Senior Center</h4>
-                            <ol class="u-text u-text-default u-text-8">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Senior Center" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Senior Center" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="u-align-center u-clearfix u-grey-10 u-section-2" id="sec-d387">
-        <div class="u-clearfix u-sheet u-sheet-1">
-            <div class="u-list u-list-1">
-                <div class="u-repeater u-repeater-1">
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-white u-list-item-1"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000">
-                        <div class="u-container-layout u-similar-container u-container-layout-1">
-                            <h4 class="u-text u-text-default u-text-1">Shopping/Stores</h4>
-                            <ol class="u-text u-text-default u-text-2">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Shopping/Stores" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Shopping/Stores" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-
-
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000">
-                        <div class="u-container-layout u-similar-container u-container-layout-2">
-                            <h4 class="u-text u-text-default u-text-3">Police Dept</h4>
-                            <ol class="u-text u-text-default u-text-4">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Police Dept" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Police Dept" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-                                <br>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000">
-                        <div class="u-container-layout u-similar-container u-container-layout-3">
-                            <h4 class="u-text u-text-default u-text-5">Fire Dept</h4>
-                            <ol class="u-text u-text-default u-text-6">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Fire Dept" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Fire Dept" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-                                <br>
-
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-4"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000">
-                        <div class="u-container-layout u-similar-container u-container-layout-4">
-                            <h4 class="u-text u-text-default u-text-7">Medical</h4>
-                            <ol class="u-text u-text-default u-text-8">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Medical" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Medical" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="u-align-center u-clearfix u-grey-10 u-section-3" id="carousel_15fc">
-        <div class="u-clearfix u-sheet u-sheet-1">
-            <div class="u-list u-list-1">
-                <div class="u-repeater u-repeater-1">
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-white u-list-item-1"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000">
-                        <div class="u-container-layout u-similar-container u-container-layout-1">
-                            <h4 class="u-text u-text-default u-text-1">Tax Collector</h4>
-                            <ol class="u-text u-text-2">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Tax Collector" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Tax Collector" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% else %}
-                                <div></div>
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000">
-                        <div class="u-container-layout u-similar-container u-container-layout-2">
-                            <h4 class="u-text u-text-default u-text-3">Restaurants</h4>
-                            <ol class="u-text u-text-4">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Restaurants" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Restaurants" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% else %}
-                                <div></div>
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000">
-                        <div class="u-container-layout u-similar-container u-container-layout-3">
-                            <h4 class="u-text u-text-default u-text-5">Environment</h4>
-                            <ol class="u-text u-text-6">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Environment" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Environment" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% else %}
-                                <div></div>
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-4"
-                        data-animation-name="customAnimationIn" data-animation-duration="1000">
-                        <div class="u-container-layout u-similar-container u-container-layout-4">
-                            <h4 class="u-text u-text-default u-text-7">Others</h4>
-                            <ol class="u-text u-text-8">
-                                {% if sSections %}
-                                {% for section in sSections %}
-                                {% for summary in section %}
-                                {% if summary.town == "Southbury" and summary.area == "Others" %}
-                                <div class="town-summary" data-town="Southbury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% elif summary.town == "Middlebury" and summary.area == "Others" %}
-                                <div class="town-summary" data-town="Middlebury">
-                                    <li>{{ summary.Summary }}</li>
-                                </div>
-                                {% else %}
-                                <div></div>
-                                {% endif %}
-                                {% endfor %}
-                                {% endfor %}
-                                {% endif %}
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-d120">
-        <div class="u-clearfix u-sheet u-sheet-1">
-            <p class="u-small-text u-text u-text-variant u-text-1">Developed by Parsh Verma-Pomperaug High School</p>
-        </div>
-    </footer> -->
-
- 
-<!-- Footer -->
-<footer class="text-center text-white" style="background-color: #0a4275;">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-        <!-- Section: CTA -->
-        <section class="d-flex justify-content-between align-items-center">
-            <span class="flex-grow-1">"Learn - We add, Share - We multiply"</span>
-          
-        </section>
-
-        <section class="d-flex justify-content-between align-items-center">
-            <span class="flex-grow-1" style="font-size: small; color: white; font-style: italic;">Contact: Parsh Verma - parshpune@gmail.com</span>
-
-      </section>
-        <!-- Section: CTA -->
-    </div>
-    <!-- Grid container -->
-</footer>
-
-    <span
-        style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; right: 20px; bottom: 20px; padding: 10px; background-image: none;"
-        class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-90 u-palette-1-base" data-href="#">
-        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use>
-        </svg>
-        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13"
-            xmlns="http://www.w3.org/2000/svg" id="svg-1d98">
-            <path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path>
-        </svg>
-    </span>
-
-
-    <script>
-
-        document.querySelectorAll(".town-summary").forEach(function (townSummary) {
-            var selected_town = "{{ selected_town }}";
-            // townSummary.style.display = selected_town;
-            townSummary.style.display ='none';
-            // document.querySelectorAll(".u-repeater u-repeater-1").style.display ='none';
-
-        });
-
-
-        document.querySelector("select[name='towns']").addEventListener("change", function () {
-
-            var selectedTown = this.value;
-            var townSummaries = document.querySelectorAll(".town-summary");
-            for (var i = 0; i < townSummaries.length; i++) {
-                var townSummary = townSummaries[i];
-                if (townSummary.getAttribute("data-town") === selectedTown) {
-                    townSummary.style.display = "block";
-                } else {
-                    townSummary.style.display = "none";
-                }
-            }
-        });
-    </script>
-
-
-
-
-
-
-</body>
-</html> {% endcomment %}
-{% comment %} {% load static %}
-<!DOCTYPE html>
-<html style="font-size: 16px;" lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords"
-        content="​digital agency, ​Crafting Effective UI/UX Design, Prototype a digital product idea, Our Features &amp;amp; Services., ​We Create Websites, ​We Create Digital, Web Design Trends, We build usable&nbsp;products., About Us">
-    <meta name="description" content="">
-    <title>Display Ideas</title>
-    <link rel="stylesheet" href="{% static 'admin/css/nicepage.css' %}" media="screen">
-    <link rel="stylesheet" href="{% static 'admin/css/displayideas.css' %}" media="screen">
-    <script class="u-script" type="text/javascript" src="{% static 'admin/js/jquery.js' %}" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{% static 'admin/js/nicepage.js' %}" defer=""></script>
-    <meta name="generator" content="Nicepage 4.15.11, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
-    <link id="u-page-google-font" rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta name="theme-color" content="#222589">
-    <meta property="og:title" content="Display Ideas">
-    <meta property="og:type" content="website">
-
-    <style>
-        .animated-text {
-            background: linear-gradient(45deg, #060b9c, #d490e8, #ec083d);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            padding: 10px;
-            font-weight: 600;
-            font-family: 'Helvetica', Arial, sans-serif;
-            display: inline-block;
-            animation: jump 1s infinite alternate, swing 1s infinite alternate ease-in-out;
-        }
-
-        @keyframes jump {
-            0%, 100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        @keyframes swing {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(10deg);
-            }
-        }
-    </style>
-</head>
-
-<body class="u-body u-xl-mode" data-lang="en">
-    <header class="u-clearfix u-header u-header" id="sec-3385">
-        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-            <a href="{% url 'home' %}" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
-                <img src="{% static 'media/images/default-logo.png' %}" class="u-logo-image u-logo-image-1"
-                    style="width: 150px; max-width: 150px; margin-left: -20px;">
-            </a>
-            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                        href="#">
-                        <svg class="u-svg-link" viewBox="0 0 24 24">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
-                        </svg>
-                        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px"
-                            y="0px" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <rect y="1" width="16" height="2"></rect>
-                                <rect y="7" width="16" height="2"></rect>
-                                <rect y="13" width="16" height="2"></rect>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-                <div class="u-custom-menu u-nav-container">
-                    <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href="{% url 'home' %}" style="padding: 10px;">Home</a>
-                        </li>
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href="{% url 'howto' %}" style="padding: 10px;"><span class="animated-text">How to use?</span></a>
-                        </li>
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href="{% url 'form' %}" style="padding: 10px;">Input Ideas</a>
-                        </li>
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href="{% url 'list' %}" style="padding: 10px;">Display Ideas</a>
-                        </li>
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href="{% url 'about' %}" style="padding: 10px;">About</a>
-                        </li>
-                        <li class="u-nav-item"><a
-                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                href="{% url 'feedback' %}" style="padding: 10px;">Feedback</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="u-custom-menu u-nav-container-collapse">
-                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-                        <div class="u-inner-container-layout u-sidenav-overflow">
-                            <div class="u-menu-close"></div>
-                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'home' %}">Home</a>
-                                </li>
-                                <li class="u-nav-item"><a
-                                    class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                                    href="{% url 'howto' %}" style="padding: 10px;"><span class="animated-text">How to use?</span></a>
-                                </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'form' %}">Input Ideas</a>
-                                </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'list' %}">Display Ideas</a>
-                                </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'about' %}">About</a>
-                                </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'feedback' %}">Feedback</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <section class="u-align-center u-clearfix u-grey-10 u-section-1" id="sec-a494">
-        <div class="u-clearfix u-sheet u-sheet-1">
-            <div>
-                <h1 style="color: rgb(33,30,123)">Select a town to view the ideas</h1>
-                <select name="towns" id="town-select" class="selectpicker" data-style="btn-success">
-                    <option selected="" value="selection">Select a town</option>
-                    {% for town in towns %}
-                    <option value="{{ town }}">{{ town }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-            <div class="u-list u-list-1" id="ideas-list">
-                <div class="u-repeater u-repeater-1">
-                    <!-- Areas will be populated here dynamically -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="text-center text-white" style="background-color: #0a4275;">
-        <div class="container p-4 pb-0">
-            <section class="d-flex justify-content-between align-items-center">
-                <span class="flex-grow-1">"Learn - We add, Share - We multiply"</span>
-            </section>
-            <section class="d-flex justify-content-between align-items-center">
-                <span class="flex-grow-1" style="font-size: small; color: white; font-style: italic;">Contact: Parsh Verma - parshpune@gmail.com</span>
-            </section>
-        </div>
-    </footer>
-
-    <span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; right: 20px; bottom: 20px; padding: 10px; background-image: none;" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-90 u-palette-1-base" data-href="#">
-        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use>
-        </svg>
-        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98">
-            <path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path>
-        </svg>
-    </span>
-
-    <script>
-        document.getElementById('town-select').addEventListener('change', function () {
-            var selectedTown = this.value;
-            if (selectedTown === 'selection') {
-                document.getElementById('ideas-list').innerHTML = '';
-                return;
-            }
-            fetch('/ideas/' + selectedTown + '/')
-                .then(response => response.json())
-                .then(data => {
-                    var ideasList = document.getElementById('ideas-list');
-                    ideasList.innerHTML = '';
-                    for (var area in data) {
-                        if (data.hasOwnProperty(area)) {
-                            var areaItem = document.createElement('div');
-                            areaItem.className = 'u-align-left u-container-style u-list-item u-repeater-item u-white';
-                            areaItem.setAttribute('data-animation-name', 'customAnimationIn');
-                            areaItem.setAttribute('data-animation-duration', '1000');
-                            areaItem.innerHTML = `
-                                <div class="u-container-layout u-similar-container">
-                                    <h4 class="u-text u-text-default">${area}</h4>
-                                    <ol class="u-text u-text-default">
-                                        ${data[area].map(summary => `<li>${summary}</li>`).join('')}
-                                    </ol>
-                                </div>
-                            `;
-                            ideasList.appendChild(areaItem);
-                        }
-                    }
-                });
-        });
-    </script>
-</body>
-
-</html> {% endcomment %}
-{% comment %} --------------------------ABOVE THIS: CODE IS WORKING BUT SUMMARY IS NOT WORKING-------------------------------------------- {% endcomment %}
-{% load static %}
-<!DOCTYPE html>
-<html style="font-size: 16px;" lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords"
-        content="​digital agency, ​Crafting Effective UI/UX Design, Prototype a digital product idea, Our Features &amp;amp; Services., ​We Create Websites, ​We Create Digital, Web Design Trends, We build usable&nbsp;products., About Us">
-    <meta name="description" content="">
-    <title>IdeaNests</title>
     <link rel="stylesheet" href={% static "admin/css/nicepage.css" %} media="screen">
     <link rel="stylesheet" href={% static "admin/css/displayideas.css" %} media="screen">
     <script class="u-script" type="text/javascript" src={% static "admin/js/jquery.js" %} defer=""></script>
@@ -1221,6 +424,358 @@
 
 {% comment %} --------------------------ABOVE THIS: CODE IS WORKING BUT SUMMARY IS NOT WORKING-------------------------------------------- {% endcomment %}
 
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords"
+        content="​digital agency, ​Crafting Effective UI/UX Design, Prototype a digital product idea, Our Features &amp;amp; Services., ​We Create Websites, ​We Create Digital, Web Design Trends, We build usable&nbsp;products., About Us">
+    <meta name="description" content="">
+    <title>IdeaNests</title>
+    <link rel="stylesheet" href="{% static 'admin/css/nicepage.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'admin/css/displayideas.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'admin/js/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'admin/js/nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.15.11, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link id="u-page-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="application/ld+json">
+    {
+        "@sSections": "http://schema.org",
+        "@type": "Organization",
+        "name": "",
+        "logo": "app_master/templates/images/default-logo.png"
+    }
+    </script>
+    <meta name="theme-color" content="#222589">
+    <meta property="og:title" content="Display Ideas">
+    <meta property="og:type" content="website">
+    <style>
+        .u-container-layout {
+            min-height: 450px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .u-list-item {
+            height: 100%;
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .animated-text {
+            background: linear-gradient(45deg, #060b9c, #d490e8, #ec083d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            padding: 10px;
+            font-weight: 600;
+            font-family: 'Helvetica', Arial, sans-serif;
+            display: inline-block;
+            animation: jump 1s infinite alternate, swing 1s infinite alternate ease-in-out;
+        }
+
+        @keyframes jump {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes swing {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(10deg);
+            }
+        }
+
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        footer.text-center {
+            padding: 10px;
+            margin-bottom: 0;
+        }
+
+        .u-sheet {
+            padding-bottom: 0;
+        }
+
+        .u-section-1,
+        .u-section-2,
+        .u-section-3 {
+            margin-bottom: 0 !important;
+        }
+
+        .u-repeater-item {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .u-container-layout {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .u-list-item {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .u-list-item h4 {
+            margin-bottom: 10px;
+        }
+
+        .u-list-item ol {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body class="u-body u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-header u-header" id="sec-3385">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <a href="{% url 'home' %}" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
+                <img src="/media/images/default-logo.png" class="u-logo-image u-logo-image-1"
+                    style="width: 150px; max-width: 150px; margin-left: -20px;">
+            </a>
+            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="#">
+                        <svg class="u-svg-link" viewBox="0 0 24 24">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+                        </svg>
+                        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px"
+                            y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                                href="{% url 'home' %}" style="padding: 10px;">Home</a></li>
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                                href="{% url 'howto' %}" style="padding: 10px;"><span class="animated-text">How to
+                                    use?</span></a></li>
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                                href="{% url 'form' %}" style="padding: 10px;">Input Ideas</a></li>
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                                href="{% url 'list' %}" style="padding: 10px;">Display Ideas</a></li>
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                                href="{% url 'about' %}" style="padding: 10px;">About</a></li>
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                                href="{% url 'feedback' %}" style="padding: 10px;">Feedback</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="u-align-center u-clearfix u-grey-10 u-section-1" id="sec-a494">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div>
+                <h1 style="color: rgb(33,30,123)">
+                    Select a town to view the ideas
+                </h1>
+                <select name="towns" class="selectpicker" data-style="btn-success">
+                    <option selected="" value="selection">Select a town</option>
+                    {% for town in towns %}
+                    <option value="{{ town }}">{{ town }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="u-list u-list-1">
+                <div class="u-repeater u-repeater-1">
+                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-white u-list-item-1"
+                        data-animation-name="customAnimationIn" data-animation-duration="1000"
+                        data-animation-direction="">
+                        <div class="u-container-layout u-similar-container u-container-layout-1">
+                            <h4 class="u-text u-text-default u-text-1">Parks &amp; Recreation</h4>
+                            <ol class="u-text u-text-default u-text-2" id="park-recreation-list"></ol>
+                        </div>
+                    </div>
+                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2"
+                        data-animation-name="customAnimationIn" data-animation-duration="1000"
+                        data-animation-direction="">
+                        <div class="u-container-layout u-similar-container u-container-layout-2">
+                            <h4 class="u-text u-text-default u-text-3">School</h4>
+                            <ol class="u-text u-text-default u-text-4" id="school-list"></ol>
+                        </div>
+                    </div>
+                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3"
+                        data-animation-name="customAnimationIn" data-animation-duration="1000"
+                        data-animation-direction="">
+                        <div class="u-container-layout u-similar-container u-container-layout-3">
+                            <h4 class="u-text u-text-default u-text-7">Senior Center</h4>
+                            <ol class="u-text u-text-default u-text-8" id="senior-center-list"></ol>
+                        </div>
+                    </div>
+                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-white u-list-item-1"
+                        data-animation-name="customAnimationIn" data-animation-duration="1000">
+                        <div class="u-container-layout u-similar-container u-container-layout-1">
+                            <h4 class="u-text u-text-default u-text-1">Shopping/Stores</h4>
+                            <ol class="u-text u-text-default u-text-2" id="shopping-stores-list"></ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-10 u-section-2" id="sec-d387">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-list u-list-1">
+                <div class="u-repeater u-repeater-1">
+                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-white u-list-item-1"
+                        data-animation-name="customAnimationIn" data-animation-duration="1000">
+                        <div class="u-container-layout u-similar-container u-container-layout-1">
+                            <h4 class="u-text u-text-default u-text-5">Environment</h4>
+                            <ol class="u-text u-text-default u-text-6" id="environment-list"></ol>
+                        </div>
+                    </div>
+                    <div class="u-align-left u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2"
+                        data-animation-name="customAnimationIn" data-animation-duration="1000">
+                        <div class="u-container-layout u-similar-container u-container-layout-2">
+                            <h4 class="u-text u-text-default u-text-7">Others</h4>
+                            <ol class="u-text u-text-default u-text-8" id="others-list"></ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center text-white" style="background-color: #0a4275;">
+        <div class="container p-4 pb-0">
+            <section class="d-flex justify-content-between align-items-center">
+                <span class="flex-grow-1">"Learn - We add, Share - We multiply"</span>
+            </section>
+            <section class="d-flex justify-content-between align-items-center">
+                <span class="flex-grow-1" style="font-size: small; color: white; font-style: italic;">Contact: Parsh
+                    Verma - parshpune@gmail.com</span>
+            </section>
+        </div>
+    </footer>
+    <span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; right: 20px; bottom: 20px; padding: 10px; background-image: none;"
+        class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-90 u-palette-1-base" data-href="#">
+        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use>
+        </svg>
+        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13"
+            xmlns="http://www.w3.org/2000/svg" id="svg-1d98">
+            <path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path>
+        </svg>
+    </span>
+    <script>
+        document.querySelector("select[name='towns']").addEventListener("change", function () {
+            var selectedTown = this.value;
+            if (selectedTown === "selection") {
+                return;
+            }
+            fetch(`/ideas/${selectedTown}/`)  // Ensure this matches the URL pattern
+                .then(response => {
+                    if (!response.ok) {
+                        // Log the response text for debugging
+                        return response.text().then(text => { throw new Error(text) });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // Debug: Check the data received
+                    document.querySelectorAll(".u-list-item ol").forEach(ol => {
+                        ol.innerHTML = ""; // Clear previous list items
+                    });
+                    if (data["Park & Recreation"]) {
+                        var list = document.getElementById("park-recreation-list");
+                        data["Park & Recreation"].forEach(summary => {
+                            var li = document.createElement("li");
+                            li.textContent = summary;
+                            list.appendChild(li);
+                        });
+                    }
+                    if (data["School"]) {
+                        var list = document.getElementById("school-list");
+                        data["School"].forEach(summary => {
+                            var li = document.createElement("li");
+                            li.textContent = summary;
+                            list.appendChild(li);
+                        });
+                    }
+                    if (data["Senior Center"]) {
+                        var list = document.getElementById("senior-center-list");
+                        data["Senior Center"].forEach(summary => {
+                            var li = document.createElement("li");
+                            li.textContent = summary;
+                            list.appendChild(li);
+                        });
+                    }
+                    if (data["Shopping/Stores"]) {
+                        var list = document.getElementById("shopping-stores-list");
+                        data["Shopping/Stores"].forEach(summary => {
+                            var li = document.createElement("li");
+                            li.textContent = summary;
+                            list.appendChild(li);
+                        });
+                    }
+                    if (data["Environment"]) {
+                        var list = document.getElementById("environment-list");
+                        data["Environment"].forEach(summary => {
+                            var li = document.createElement("li");
+                            li.textContent = summary;
+                            list.appendChild(li);
+                        });
+                    }
+                    if (data["Others"]) {
+                        var list = document.getElementById("others-list");
+                        data["Others"].forEach(summary => {
+                            var li = document.createElement("li");
+                            li.textContent = summary;
+                            list.appendChild(li);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error("Error fetching summaries:", error);
+                });
+        });
+    </script>
+</body>
 
 

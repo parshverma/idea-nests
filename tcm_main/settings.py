@@ -181,8 +181,8 @@ EMAIL_USE_TLS = True
 
 
 TOWNS = ['Southbury', 'Middlebury','Woodbury']
-AREAS = ['Park & Recreation', 'School', 'Library', 'Senior Center', 'Shopping/Stores', 'Police Dept',
-         'Fire Dept', 'Medical', 'Tax Collector', 'Restaurants', 'Environment', 'Others']
+AREAS = ['Park & Recreation', 'School', 'Senior Center', 'Shopping/Stores', 'Environment', 'Others']
+
 
 # Dynamically create the combinations of towns and areas
 TOWN_AREA_COMBINATIONS = [(town, area) for town in TOWNS for area in AREAS]

@@ -13,11 +13,11 @@ AREA_CHOICES = [
     ('Library', 'Library'),
     ('Senior Center', 'Senior Center'),
     ('Shopping/Stores', 'Shopping/Stores'),
-    ('Police Dept', 'Police Dept'),
-    ('Fire Dept', 'Fire Dept'),
-    ('Medical', 'Medical'),
-    ('Tax Collector', 'Tax Collector'),
-    ('Restaurants', 'Restaurants'),
+    # ('Police Dept', 'Police Dept'),
+    # ('Fire Dept', 'Fire Dept'),
+    # ('Medical', 'Medical'),
+    # ('Tax Collector', 'Tax Collector'),
+    # ('Restaurants', 'Restaurants'),
     ('Environment', 'Environment'),
     ('Others', 'Others')
 ]
